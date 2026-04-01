@@ -8,8 +8,8 @@ const projects = [
     description: "My Portfolio for displaying my skills and projects",
     image: "/Projects/portfolio.jpeg",
     tags: ["React", "TailwindCSS"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://vidhan-pansara-portfolio.vercel.app/",
+    githubUrl: "https://github.com/VidhanPansara/Portfolio",
   },
 ];
 
@@ -17,18 +17,15 @@ const Project = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-primary">Projects</span>
         </h2>
 
-        {/* Description */}
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Here are some of my recent projects. Each project was carefully
           crafted with attention to detail, performance, and user experience.
         </p>
 
-        {/* Dynamic Layout */}
         <div
           className={`${
             projects.length === 1
@@ -41,7 +38,6 @@ const Project = () => {
               key={project.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover w-full max-w-sm"
             >
-              {/* Image */}
               <div className="h-48 overflow-hidden">
                 <img
                   src={project.image}
@@ -50,9 +46,7 @@ const Project = () => {
                 />
               </div>
 
-              {/* Content */}
               <div className="p-6">
-                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, index) => (
                     <span
@@ -64,15 +58,12 @@ const Project = () => {
                   ))}
                 </div>
 
-                {/* Title */}
                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
 
-                {/* Description */}
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
 
-                {/* Links */}
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     <a
@@ -99,7 +90,6 @@ const Project = () => {
           ))}
         </div>
 
-        {/* Github Button */}
         <div className="text-center mt-12">
           <a
             href="https://github.com/VidhanPansara"

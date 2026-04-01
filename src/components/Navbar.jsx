@@ -36,7 +36,6 @@ const Navbar = () => {
           </span>
         </a>
 
-        {/* desktop */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
             <a
@@ -49,7 +48,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* mobile */}
         <button
           onClick={() => setIsMenuOpened((prev) => !prev)}
           className="md:hidden p-2 text-foreground z-50"
