@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: "Portfolio",
     description: "My Portfolio for displaying my skills and projects",
-    image: "../../public/projects/portfolio.jpeg",
+    image: "/Projects/portfolio.jpeg",
     tags: ["React", "TailwindCSS"],
     demoUrl: "#",
     githubUrl: "#",
