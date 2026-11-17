@@ -1,26 +1,38 @@
-import { FaHtml5, FaJs, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { VscVscode } from "react-icons/vsc";
 import {
-  SiExpress,
-  SiPostgresql,
-  SiPrisma,
-  SiTailwindcss,
-} from "react-icons/si";
+  FaCss3Alt,
+  FaDocker,
+  FaGitAlt,
+  FaGithub,
+  FaHtml5,
+  FaJs,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa";
+import { SiExpress, SiMongodb, SiMysql, SiPostgresql, SiPostman, SiSocketdotio, SiTailwindcss } from "react-icons/si";
+import { KeyRound, Server } from "lucide-react";
 import { useState } from "react";
 
 const skills = [
-  { name: "HTML/CSS", icon: <FaHtml5 />, category: "frontend" },
+  { name: "React.js", icon: <FaReact />, category: "frontend" },
+  { name: "HTML", icon: <FaHtml5 />, category: "frontend" },
+  { name: "CSS", icon: <FaCss3Alt />, category: "frontend" },
   { name: "JavaScript", icon: <FaJs />, category: "frontend" },
   { name: "Tailwind CSS", icon: <SiTailwindcss />, category: "frontend" },
   { name: "Node.js", icon: <FaNodeJs />, category: "backend" },
-  { name: "Express", icon: <SiExpress />, category: "backend" },
-  { name: "PostgreSQL", icon: <SiPostgresql />, category: "backend" },
-  { name: "PrismaORM", icon: <SiPrisma />, category: "backend" },
-  { name: "Git/Github", icon: <FaGitAlt />, category: "tools" },
-  { name: "VS Code", icon: <VscVscode />, category: "tools" },
+  { name: "Express.js", icon: <SiExpress />, category: "backend" },
+  { name: "RESTful APIs", icon: <Server />, category: "backend" },
+  { name: "JWT", icon: <KeyRound />, category: "backend" },
+  { name: "Socket.IO", icon: <SiSocketdotio />, category: "backend" },
+  { name: "PostgreSQL", icon: <SiPostgresql />, category: "database" },
+  { name: "MySQL", icon: <SiMysql />, category: "database" },
+  { name: "MongoDB", icon: <SiMongodb />, category: "database" },
+  { name: "Docker", icon: <FaDocker />, category: "devops" },
+  { name: "Git", icon: <FaGitAlt />, category: "tools" },
+  { name: "GitHub", icon: <FaGithub />, category: "tools" },
+  { name: "Postman", icon: <SiPostman />, category: "tools" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "frontend", "backend", "database", "devops", "tools"];
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -30,7 +42,7 @@ const Skills = () => {
   );
 
   return (
-    <section id="skills" className="py-24 px-4 relative bg-secondary/30">
+    <section id="skills" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           My <span className="text-primary"> Skills</span>

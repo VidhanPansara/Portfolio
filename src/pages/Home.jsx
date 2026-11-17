@@ -3,6 +3,7 @@ import StarBackground from "../components/StarBackground";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import About from "../components/About";
+import Experience from "../components/Experience";
 import Skills from "../components/Skills";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
@@ -18,6 +19,7 @@ const Home = () => {
       <main>
         <HeroSection />
         <About />
+        <Experience />
         <Skills />
         <Project />
         <Contact />

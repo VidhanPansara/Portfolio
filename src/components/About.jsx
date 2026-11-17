@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Briefcase, Code, Database, GraduationCap } from "lucide-react";
 import React from "react";
 
 const About = () => {
@@ -12,12 +12,30 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-muted-foreground">
-              Hello! I'm Vidhan Pansara, a passionate software developer with a
-              strong foundation in Computer Engineering. Currently I'm pursuing
-              B.E. in Computer Engineering at Government Engineering
-              Engineering, Rajot.I love creating efficient, scalable solutions
-              to real-world problems.
+              Software Engineer with hands-on experience in full-stack
+              application development, backend engineering, RESTful APIs,
+              database management, and application migration. I work with
+              Node.js, Express.js, React.js, PostgreSQL, MySQL, and MongoDB,
+              and I am comfortable with authentication, database design,
+              Docker, and Git in production environments.
             </p>
+
+            <div className="flex items-start gap-4 text-left">
+              <div className="p-3 rounded-full bg-primary/10">
+                <GraduationCap className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-lg">
+                  B.E. in Computer Engineering
+                </h3>
+                <p className="text-muted-foreground">
+                  Government Engineering College, Rajkot
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Sep 2022 – May 2026 · CGPA 8.35
+                </p>
+              </div>
+            </div>
 
             <div className="flex sm:flex-row flex-col gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
@@ -41,10 +59,10 @@ const About = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Web development</h4>
+                  <h4 className="font-semibold text-lg">Full-stack development</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web application with modern
-                    frameworks.
+                    Building web applications with React.js on the frontend and
+                    Node.js and Express.js on the backend.
                   </p>
                 </div>
               </div>
@@ -52,14 +70,14 @@ const About = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
+                  <Database className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                  <h4 className="font-semibold text-lg">Databases & migration</h4>
                   <p className="text-muted-foreground">
-                    Designing clean, user-friendly interfaces with focus on
-                    usability, accessibility, and modern design principles.
+                    Working with PostgreSQL, MySQL, and MongoDB, including
+                    schema design and legacy application migrations.
                   </p>
                 </div>
               </div>
@@ -71,10 +89,10 @@ const About = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Backend Development</h4>
+                  <h4 className="font-semibold text-lg">Backend & APIs</h4>
                   <p className="text-muted-foreground">
-                    Building scalable APIs, handling databases, authentication,
-                    and server-side logic using modern technologies.
+                    Designing RESTful APIs, JWT authentication, and real-time
+                    features with Socket.IO.
                   </p>
                 </div>
               </div>
